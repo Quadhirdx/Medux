@@ -28,7 +28,7 @@ const { uncache, nocache } = require('./lib/loader')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep, reSize } = require('./lib/myfunc')
 
-const prefix = ''
+const prefix = '!'
 
 global.db = JSON.parse(fs.readFileSync('./database/database.json'))
 if (global.db) global.db = {
@@ -301,8 +301,8 @@ xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${xeonName.split("@")[0]}, yo
 "sourceUrl": `${wagc}`}}})
 } else if (anu.action == 'demote') {
 const xeonbuffer = await getBuffer(ppuser)
-const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+const xeontime = moment.tz('Africa/Lagos').format('HH:mm:ss')
+const xeondate = moment.tz('Africa/Lagos').format('DD/MM/YYYY')
 let xeonName = num
 xeonbody = `𝗢𝗼𝗽𝘀‼️ @${xeonName.split("@")[0]}, you have been *demoted* from *admin* 😬`
 XeonBotInc.sendMessage(anu.id,
